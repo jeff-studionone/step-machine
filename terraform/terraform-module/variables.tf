@@ -30,10 +30,6 @@ variable "lambda_timeout" {
   default = "30"
 }
 
-data "external" "git_details" {
-  program = ["bash", "../version.sh"]
-}
-
 locals {
   common_tags = {
     Project     = var.project
