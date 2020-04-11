@@ -18,14 +18,6 @@ variable "python_version" {
   default = "3.7"
 }
 
-variable "hashing_lambda_filepath" {
-  default = "../../lambda/hashing"
-}
-
-variable "deployment_package_name" {
-  default = "lambda.zip"
-}
-
 variable "lambda_timeout" {
   default = "30"
 }

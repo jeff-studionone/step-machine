@@ -3,6 +3,7 @@ provider "aws" {
   version = ">= 2.4.0"
 }
 
+# You will need this bucket already running in you env
 terraform {
   backend "s3" {
     key    = "step-machine/dev.tfstate"
